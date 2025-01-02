@@ -1,6 +1,8 @@
 import { definePlugin } from "@utils/types";
 import { Logger } from "@utils/Logger";
 import { UploadHandler } from "@webpack/common";
+import noUploadLimit from "./plugins/no_upload_limit.js";
+
 
 // Regex to detect large file uploads
 const largeFileRegex = /\.(mp4|mkv|avi|mov|flv|wmv)$/i;
